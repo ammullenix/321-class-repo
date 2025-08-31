@@ -1,8 +1,9 @@
 body{
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     font-family: 'Fredoka One';
-    height: 100vh;
+    min-height: 100vh;  
+    padding-bottom: 50px;
   
 }
 
