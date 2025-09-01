@@ -1,3 +1,21 @@
-.bg-purple{
-    background-color: rebeccapurple;
+.bg-lightblue{
+    background-color: lightblue;
+}
+
+.btn-lightblue {
+    background-color: lightblue;
+    color: white; /* Adjust text color for contrast */
+    border: none; /* Remove border */
+}
+
+.btn-lightblue:hover {
+    background-color: #add8e6; /* Slightly darker shade for hover effect */
+}
+
+.bg-lightblue-text {
+    background-color: lightblue; /* Light blue background */
+    color: white; /* Ensure text is readable */
+    font-size: 1.25rem; /* Larger text size */
+    line-height: 1.6; /* Improve readability */
+    border-radius: 8px; /* Rounded corners */
 }
