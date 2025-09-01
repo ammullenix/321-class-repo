@@ -1,0 +1,306 @@
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(to left, #d4f0ed, #dfe9ef);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.mylogo{
+    font-family: "Libertinus Keyboard", system-ui;
+    font-size: 18px;
+    color: #6794e8;
+    font-weight: 700;
+    animation: slideRight 1s ease forwards; 
+}
+@keyframes slideRight{
+    0%{ opacity: 0; transform: translateX(-50px);}
+    100%{opacity: 1; transform: translateX(0);}
+}
+
+
+.navbar a{
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #2b0d64;
+    margin-left: 35px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+}
+
+.content h3{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.content h1{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    width: 100%;
+    font-size: 64px;
+    margin: 10px 0;
+    background: linear-gradient(6deg, #e253ab, #eda0d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 4s linear infinite;
+
+}
+
+@keyframes shimmer{
+    0%{background-position: -200px 0 ;}
+    100%{background-position: 200px 0 ;}
+}
+
+.content p{
+   font-family: "Syne Mono", monospace; 
+   font-weight: 400;
+   font-style: normal;
+   font-size: 18px;
+   margin-top: 10px;
+   line-height: 1.9;
+}
+
+.social{
+    margin: 30px 0;
+}
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border: 2px solid#ffb6d9;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #d63384;
+    margin-right: 15px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.social a:hover{
+    background: #ffb6d9;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow:  0 0 12px #ffb6d9;
+}
+
+.linkedin-btn::after{
+    content:"www.linkedin.com/in/franshesca-arnao-perez" ;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fa9a63;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.image-box img{
+    width: 380px;
+    border-radius: 50%;
+    border: 5px solid #e2b3ca;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%, 100%{ transform: translateY(0);}
+    50%{transform: translateY(-15px);}
+}
+
+
+.Experience, .CareerInt, .contact{
+    background: #e9bce0;
+    color: black;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.CareerInt h1, .Experience h1, .contact h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+
+.Experience p, .contact p{
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+}
+
+.CareerInt p{
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+}
+
+.Experience h5{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.social a{
+    position: relative;
+}
+
+.resume-btn{
+    border-color: #fa9a63;
+    color: #fa9a63;
+}
+
+.resume-btn:hover{
+    background: #fa9a63;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px #fa9a63;
+}
+
+.resume-btn::after{
+    content: "Download Resume";
+    position:absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fa9a63;
+    color: white;
+    padding: 6 px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+
+}
+
+.resume-btn:hover::after{
+    opacity:  1;
+}
+
+.phone-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background: #fa9a63;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.phone-btn:hover{
+    background: #d63384;
+    transform: rotate(10deg);
+    box-shadow: 0 0 12px #fa9a63;
+}
+
+.phone-img{
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+}
+
+#toggle-contact{
+    display: none;
+}
+
+.contact-bubbles{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3 ease;
+
+}
+
+#toggle-contact:checked ~ .contact-bubbles {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
+
+.bubble{
+    display: inline-block;
+    background: #ffb6d9;
+    color: white;
+    padding: 8 px 14px;
+    border-radius: 20px;
+    font-size: 14x;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    animation: popIn 0.4s ease forwards ;
+}
+
+@keyframes popIn{
+    from{opacity: 100; transform: scale(0.8) ;}
+    to {opacity: 100; transform: scale(1) ;}
+}
+
+.bubble.phone{
+    background: #fa9a63;
+}
+
+.bubble.email{
+    background: #d63384;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
