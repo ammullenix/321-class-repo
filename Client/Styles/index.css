@@ -10,7 +10,7 @@
     margin-top: 100px; /* Moves the text down */
     margin-left: 160px;
 }
-img{
+#img{
     margin-top: 20px; /* Moves the image down */
     display: block; /* Treat the image as a block-level element */
     margin-left: 80px; /* Set left margin */
