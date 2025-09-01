@@ -1,0 +1,14 @@
+#Title{
+    font-size: 70px;
+    text-align: center;
+}
+#SubTitles{
+    font-size: 40px;
+    text-align: center;
+}
+#Headshot{
+    clip-path: circle(40%);
+    display: block;
+    margin: auto;
+    width: 50%;
+}
