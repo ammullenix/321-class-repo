@@ -1,3 +1,114 @@
-.bg-red{
-    background-color: #c41e3a;
+:root{
+ 
+  --u-blue: #1633a2;         
+  --u-blue-dark: #0f2578;     
+  --u-purple: #7b61ff;        
+  --bg: #f5f7fb;               
+  --card: #ffffff;
+  --text: #1f2734;
+  --muted: #6b7280;
+  --line: #e6e9f1;
+}
+
+
+html, body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img{ max-width:100%; height:auto; display:block; }
+
+.navbar{
+  background: var(--u-blue) !important;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.navbar .navbar-brand{
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+footer{
+  background: var(--u-blue-dark);
+  border-top: 1px solid rgba(0,0,0,.2);
+}
+
+
+.container{ max-width: 1080px; }
+
+
+main section{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 26px;
+  margin-bottom: 26px;
+  box-shadow: 0 12px 28px rgba(22,51,162,.08);
+}
+
+/* ---------- Headings ---------- */
+h1, h2{ line-height: 1.25; }
+h2.fw-bold{
+  font-weight: 700 !important;
+  letter-spacing: .2px;
+}
+h2.fw-bold::after{
+  content:"";
+  display:block;
+  width: 64px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--u-blue), var(--u-purple));
+}
+
+/* ---------- Links / Buttons ---------- */
+a{ color: var(--u-blue); }
+a:hover{ color: var(--u-blue-dark); }
+
+.btn-primary{
+  background: var(--u-purple);
+  border-color: var(--u-purple);
+}
+.btn-primary:hover{
+  background: #6a50ff;
+  border-color: #6a50ff;
+}
+.btn-outline-secondary{
+  color: var(--u-blue);
+  border-color: var(--u-blue);
+}
+.btn-outline-secondary:hover{
+  background: var(--u-blue);
+  color: #fff;
+}
+
+/* ---------- Utilities ---------- */
+.text-muted{ color: var(--muted) !important; }
+.rounded-portrait{
+  border-radius: 50%;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+.mt-6{ margin-top: 3.5rem; }
+.mb-6{ margin-bottom: 3.5rem; }
+section ul{ margin:0; }
+section ul li{ margin-bottom:.35rem; }
+
+
+.pc-img{
+  height: 280px;        
+  object-fit: contain;    
+  background: #000;       
+  border-bottom: 1px solid var(--line);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  filter: invert(1) drop-shadow(0 0 3px rgba(0,0,0,.5));
+}
+
+
+@media (max-width: 576px){
+  main section{ padding: 18px; }
 }
