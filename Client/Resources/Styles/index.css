@@ -1,42 +1,37 @@
-.bg-red{
-    background-color: #c41e3a;
+img{
+    width: 20%;
+    height: 25%;
 }
 
-.container{
+h1{
+    font-size: 40px;
     text-align: center;
-    margin: auto;
-    width: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container2{
+h2{
+    font-size: 25px;
     text-align: center;
-    margin-left: 0;
-    width: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-img {
-    position: absolute;  
-    top: 75px;           
-    right: 140px;         
-    width: 550px;        
-    height: auto;        
-    border-radius: 10px;
-    padding: 20px 
+#work{
+    font-size: 25px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-p {
-    font-size: large;
+#body{
+    font-size: 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-.text-container {
-    max-width: 50%;
-    float: left;
-    margin-right: 20px;
-}
-
-.container4{
-    position: relative;
-    margin-top: 500px;
-    text-align: right;
-    left: -335px;
+#contributions{
+    font-size: 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
 }
