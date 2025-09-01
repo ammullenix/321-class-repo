@@ -1,0 +1,64 @@
+.btn-linkedin {
+  border: 2px solid white;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-linkedin:hover{
+  background-color: white;
+  color: #253d7e;
+}
+
+.justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.justify-text h1,
+.justify-text h2,
+.justify-text p {
+  text-align: inherit;
+}
+    .carousel-card{
+    max-width: 500px;
+    width: 100%;
+    min-height: 300px; 
+    background: rgba(255,255,255,0.6);
+    border-radius: .75rem;
+    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.25);
+    backdrop-filter: blur(4px);
+}
+@media (max-width: 576px){
+  .carousel-card { min-height: auto; }
+}
+   .about-wrapper{
+      min-height: 100vh;
+    }
+    .about-card{
+      max-width: 700px;
+    background: rgba(255, 255, 255, 0.76);
+    border-radius: .75rem;
+    box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.25);
+    backdrop-filter: blur(4px);
+      padding: clamp(1.25rem, 3vw, 2.5rem);
+    }
+
+    .about-title{
+      color: var(--ink);
+      letter-spacing: .02em;
+      font-weight: 700;
+      margin-bottom: .75rem;
+      text-transform: uppercase;
+    }
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.55;
+  font-size: clamp(1rem, 2.2vw, 1.125rem);
+  text-align: left;
+}
+    .about-list li + li{ margin-top: .75rem; }
+    .about-label{ font-weight: 700; text-transform: uppercase; }
