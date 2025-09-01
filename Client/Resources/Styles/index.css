@@ -1,42 +1,9 @@
-.bg-red{
-    background-color: #c41e3a;
+.bg-blue{
+    background-color: blue;
 }
 
-.container{
-    text-align: center;
-    margin: auto;
-    width: auto;
+img{
+    width: 70%;
+    height: auto;
 }
 
-.container2{
-    text-align: center;
-    margin-left: 0;
-    width: 40%;
-}
-
-img {
-    position: absolute;  
-    top: 75px;           
-    right: 140px;         
-    width: 550px;        
-    height: auto;        
-    border-radius: 10px;
-    padding: 20px 
-}
-
-p {
-    font-size: large;
-}
-
-.text-container {
-    max-width: 50%;
-    float: left;
-    margin-right: 20px;
-}
-
-.container4{
-    position: relative;
-    margin-top: 500px;
-    text-align: right;
-    left: -335px;
-}
