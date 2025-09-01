@@ -1,0 +1,26 @@
+.jumbotron {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+#experience {
+    background-color: #c41e3a;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
+#education {
+    background-color: #55E2E9;
+    color: #000000;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+}
