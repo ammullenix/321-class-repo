@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    crossorigin="anonymous"
-  />
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIS 321</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/index.css">
 </head>
 <body style="background:#eef1f3; color:#222;">
   <header></header>
@@ -107,108 +103,62 @@
                   style="height:210px; object-fit:cover; border-radius:8px;"
                 />
               </div>
+<body>
+    <nav class="navbar bg-red">
+        <div class="container">
+            <h1 class="navbar-brand text-white h2 mb-0 fw-bold">Welcome to MIS 321</h1>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#studentMenu"
+                aria-controls="studentMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="studentMenu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- THIS IS WHERE YOU LINK YOUR PAGE -->
+                     <!-- Copy lines 29-31 and paste below line 35 -->
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Student 1</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./Pages/teachingAssistant.html">TAs</a>
+                    </li>
+                </ul>
+
             </div>
-          </div>
-
-          <!-- Projects section -->
-          <div class="rounded-3 p-3 mb-4"
-               style="background:#ffffff; border:1px solid rgba(0,0,0,.08);">
-            <h2 class="fw-bold mt-0 mb-2" style="color:#9E1B32;">Projects</h2>
-            <h3 class="fw-bold mb-1" style="color:#333;">Customer Feedback Analysis</h3>
-            <p class="fs-5 mb-2">• Cleaned and analyzed 2,000+ customer feedback entries using Excel and pivot tables to identify satisfaction trends</p>
-            <p class="fs-5 mb-3">• Delivered insights that highlighted recurring issues and improved decision-making for customer service strategies</p>
-
-            <h3 class="fw-bold mb-1" style="color:#333;">Stress Survey Dashboard</h3>
-            <p class="fs-5 mb-2">• Built an interactive dashboard in Excel to analyze survey data and visualize stress patterns</p>
-            <p class="fs-5 mb-3">• Identified key trends in stress type, academic confidence, and demographic groups, providing actionable recommendations</p>
-
-            <h3 class="fw-bold mb-1" style="color:#333;">Budget Tracker</h3>
-            <p class="fs-5 mb-2">• Developed an automated personal finance tracker in Excel to visualize expenses, savings, and income over time</p>
-            <p class="fs-5 mb-0">• Applied data validation, pivot tables, and formulas to improve usability and financial awareness</p>
-          </div>
-
-          <!-- Skills section -->
-          <div class="rounded-3 p-3 mb-4"
-               style="background:#ffffff; border:1px solid rgba(0,0,0,.08);">
-            <h2 class="fw-bold mt-0 mb-2" style="color:#9E1B32;">Skills</h2>
-            <ul class="mb-0 fs-5">
-              <li>Database Management (SQL)</li>
-              <li>Data Analysis and Visualization (Excel, Power BI)</li>
-              <li>Information Security Fundamentals</li>
-              <li>Computer Programming (C#, C++, HTML, JavaScript)</li>
-              <li>Problem Solving and Critical Thinking</li>
-              <li>Collaboration and Team Projects</li>
-              <li>Professionalism and Strong Work Ethic</li>
-            </ul>
-          </div>
-
-          <!-- Experience Section -->
-          <div class="rounded-3 p-3 mb-4"
-               style="background:#ffffff; border:1px solid rgba(0,0,0,.08);">
-            <h2 class="fw-bold mt-0 mb-3" style="color:#9E1B32;">Experience</h2>
-
-            <!-- Experience 1 -->
-            <div class="row g-3 align-items-center mb-3">
-              <div class="col-12 col-md-3">
-                <img
-                  src="./Resources/Images/para-tuscaloosa-removebg-preview.png"
-                  alt="Para Logo"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-12 col-md-9">
-                <h3 class="fw-bold mb-1" style="color:#333;">Desk Services Associate</h3>
-                <p class="mb-1">Sep 2018 – Present</p>
-                <p class="mb-0">Another description of responsibilities or achievements.</p>
-              </div>
-            </div>
-
-            <!-- Experience 2 -->
-            <div class="row g-3 align-items-center mb-3">
-              <div class="col-12 col-md-3">
-                <img
-                  src="./Resources/Images/istockphoto-1825848708-612x612-removebg-preview.png"
-                  alt="Video Editing Logo"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-12 col-md-9">
-                <h3 class="fw-bold mb-1" style="color:#333;">Freelance Graphic Designer and Video Editor</h3>
-                <p class="mb-1">Jan 2021 - Dec 2024</p>
-                <p class="mb-0">[Description of responsibilities or achievements.]</p>
-              </div>
-            </div>
-
-            <!-- Experience row 3: GoPanda -->
-            <div class="row g-3 align-items-center">
-              <div class="col-12 col-md-3">
-                <img
-                  src="./Resources/Images/gopanda-removebg-preview.png"
-                  alt="goPanda Media logo"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-12 col-md-9">
-                <h3 class="fw-bold mb-1" style="color:#333;">CEO, GoPanda Media</h3>
-                <p class="mb-1">Nov 2022 – Feb 2024</p>
-                <p class="mb-0">Short description of role, key responsibilities, or achievements.</p>
-              </div>
-            </div>
-          </div>
-          <!-- /Experience Section -->
-
         </div>
-        <!-- /right column -->
+    </nav>
 
-      </div>
-      <!-- /page layout row -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 pe-lg-4">
+                <h2 class="h1 fw-bold mb-4">Course Overview</h2>
+                <p>This course examines the basics of designing and constructing object-oriented and event-driven business applications, and related problem decomposition techniques. It builds on your prior problem solving and programming exposure while concentrating on the construction and testing of individual business programs.</p>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <img src="https://news.ua.edu/wp-content/uploads/2019/09/Hewson-Hall_Exterior_East-View_bSignage7.jpg" alt="The University of Alabama Hewson Hall - Culverhouse College of Business" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                    <a href="#" class="btn btn-danger btn-lg px-4 py-3 rounded pill">Meet our TAs</a>
+                    <a href="#" class="btn btn-danger btn-lg px-4 py-3 rounded pill">Resume Book</a>
+                    <a href="#" class="btn btn-danger btn-lg px-4 py-3 rounded pill">MIS Advisory Board</a>
+                </div>
+            </div>
+        </div>
     </main>
-  </div>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./Scripts/index.js"></script>
 </body>
 </html>
