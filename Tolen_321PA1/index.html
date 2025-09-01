@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>John Tolen's Webpage</title>
+    <link rel="stylesheet" href="./Resources/Styles/index.css">
+</head>
+<body onload="handleOnLoad()">
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top" aria-label="Main navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">John Tolen's Webpage</a>
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mainOffcanvas"
+            aria-controls="mainOffcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mainOffcanvas" aria-labelledby="mainOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mainOffcanvasLabel">Navigate</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#personal">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+    </header>
+
+<!--jumbotron-->
+    <div class="mt-2"> 
+        <div class="p-0 text-center bg-dark text-light"> 
+            <div class="container py-5"> 
+                <h1 class="text-light"><span style="font-family: 'Georgia', serif;">T</span>olen<span style="font-family: 'Georgia', serif;">T</span>ech</h1> 
+                <p class="col-lg-8 mx-auto lead">Welcome to TolenTech. This site provides all necessary information regarding our founder and CEO, John W. Tolen. Our team at <span style="font-family: 'Georgia', serif;">T</span>olen<span style="font-family: 'Georgia', serif;">T</span>ech works tirelessly to ensure quality standards are met and client satisfaction. Every day is another opportunity to change the world. Make <span style="font-family: 'Georgia', serif;">T</span>oday <span style="font-family: 'Georgia', serif;">T</span>errific.</p> 
+            </div> 
+        </div> 
+    </div>
+
+    <!--section cards-->
+    <div id="cards"></div>
+    <script src="./Resources/Scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--Experience and Education section-->
+    <section id="experience" class="container py-5 bg-dark text-light">
+        <h2>Work Experience & Education</h2>
+        <img src="./Resources/img/experience.jpg" alt="Work and Education" class="p-3 img-fluid" />
+        <p></p>
+    </section>
+
+    <!--Personal-->
+    <section id="personal" class="container py-5 bg-dark text-light">
+        <h2>Personal Information</h2>
+        <img src="./Resources/img/personalinfo.jpg" alt="Work and Education" class="p-3 img-fluid" />
+        <p></p>
+    </section>
+
+    <!--contact-->
+    <section id="contact" class="container py-5 bg-dark text-light">
+        <h2>Contact TolenTech</h2>
+        <p></p>
+        <p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/johntolen/" target="_blank" class="btn btn-primary mb-2 ms-1">LinkedIn</a></li>
+            <li>Email: jwtolen@crimson.ua.edu</li>
+            <p></p>
+            <li>Phone: (256)-698-4439</li>
+          </ul>
+        </p>
+    </section>
+
+</body>
+</html>
