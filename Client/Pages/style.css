@@ -1,0 +1,41 @@
+#Size {
+    font-size: 30px;
+    text-align: center;
+    font: bold;
+    color: aliceblue;
+}
+
+#size1 {
+    font-size: 30px;
+    text-align: center;
+    font: bold;
+    color: black;
+}
+
+#list {
+    margin-left:600px;
+
+}
+
+#paragraph {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.jumbotron {
+    padding: 4rem;
+    margin-bottom: 2rem;
+    background-image: url("https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Frolltide.com%2Fimages%2F2023%2F12%2F13%2F110423_MFB_runout_LSU_KG0508.JPG&height=300&type=webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
