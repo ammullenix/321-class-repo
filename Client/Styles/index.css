@@ -17,3 +17,7 @@ border: 4px solid white;
 .about-title{
 text-decoration:underline;
 }
+
+.bg-red{
+    background-color: #c41e3a;
+}
