@@ -11,27 +11,28 @@ ul{
 
 }
 
-
+li{
+    margin-bottom: 5px;
+}
 
 a:link,a:visited{
     display:block;
     font-weight:bold;
     color: white;
     background-color: rgb(42, 42, 212);
-    width: 130px;
+    width: 100%;
+    max-width: 190px;
     text-align:center;
     padding:10px;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid black;
+    border: 10px solid black;
 }
 a:hover,a:active{
     background-color: rgb(196, 20, 20);
 }
 
-li{
-    float:left;
-}
+
 
 .icon1{
     border: 1px solid black;
