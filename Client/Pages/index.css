@@ -1,8 +1,46 @@
 
-.profile-pic{
-    position:relative;
-    width: 200px;
-    height: 250px;
-    border-radius:70%;
-  }
+
   
+  .bg-lilac{
+    background-color: #c8a2c8;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile{
+    flex: 70%;
+    padding: 10px;
+}
+
+
+.post-text-box{
+    text-size-adjust: 100px;
+    flex: 30%;
+    padding: 20px;
+}
+
+
+
+.profile-pic{
+    width: 120px;
+    display: block;
+    margin-left: 5;
+    margin-right: 5;
+
+}
+
+.header{
+    text-align: center;
+    padding: 5px;
+}
+
+
+.nav{
+    text-align: center;
+    padding: 50px;
+}
+
+
