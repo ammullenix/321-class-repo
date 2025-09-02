@@ -1,0 +1,77 @@
+body {
+ background-image: url("https://e0.pxfuel.com/wallpapers/765/881/desktop-wallpaper-virtual-background-oit-ua-edu-the-university-of-alabama-alabama-football-logo.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+h1{
+    background-color:beige;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 15px;
+    width: 300px;
+    border: 15px;
+    padding: 40px;
+    margin: 20px;
+    position: fixed;
+    top: 0px;
+    left:130px;
+}
+h2{
+    background-color:beige;
+    width: 500px;
+    border: 15px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    left: 50px;
+    top: 190px;
+}
+.img{
+    position: fixed;
+    left: 620px;
+    top:15px;
+}
+.work-im-interested-in{
+    background-color:beige;
+    width: 300px;
+    border: 15px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    left: 10px;
+    top: 320px;
+}
+.skills{
+    background-color:beige;
+    width: 300px;
+    border: 15px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    top: 320px;
+    left: 350px;
+}
+.work-experience{
+    background-color:beige;
+    width: 300px;
+    border: 15px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: fixed;
+    top: 470px;
+    left: 170px;
+}
+.all{
+    font-family: "Papyrus", fantasy;
+    font-style: bold;
+    
+}
