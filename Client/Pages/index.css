@@ -1,0 +1,55 @@
+
+header{
+    text-align: center;
+    padding: 5px;
+    
+}
+
+nav{
+    text-align: center;
+    padding: 10px;
+    background-color: #c8a2c8;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.post-text-box{
+    background-color: #eae7f2;
+    text-align: center;
+    text-size-adjust: 100px;
+    flex: 30%;
+    padding: 20px;
+}
+.profile{
+    flex: 70%;
+    padding: 20px;
+
+    
+}
+.border{
+    border: 5px Solid #ffb6c1;
+}
+
+.profile img{
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.profile h1{
+    text-align: center;
+}
+
+  
+  .bg-lilac{
+    background-color: #c8a2c8;
+}
+
