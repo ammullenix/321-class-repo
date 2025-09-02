@@ -1,0 +1,14 @@
+.bg-red{
+    background-color: #c41e3a;
+}
+body {
+    background-image: url('https://stories.ua.edu/visitors-guide/assets/0uwtiYrJhM/2206024_zr_student_center_005-2400x1600.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
+main .row .col-lg-7 {
+    background: rgba(255, 255, 255, 0.847);
+    padding: 20px;
+    border-radius: 12px;
+}
