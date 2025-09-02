@@ -6,3 +6,9 @@
     background-color:maroon;
     color: white;
 }
+
+.colorred {
+    color:darkred;
+    text-decoration-line: underline;
+    text-decoration-color:darkred;
+}
