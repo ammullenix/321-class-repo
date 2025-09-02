@@ -62,7 +62,7 @@ h2.fw-bold::after{
   background: linear-gradient(90deg, var(--u-blue), var(--u-purple));
 }
 
-/* ---------- Links / Buttons ---------- */
+
 a{ color: var(--u-blue); }
 a:hover{ color: var(--u-blue-dark); }
 
@@ -83,7 +83,7 @@ a:hover{ color: var(--u-blue-dark); }
   color: #fff;
 }
 
-/* ---------- Utilities ---------- */
+
 .text-muted{ color: var(--muted) !important; }
 .rounded-portrait{
   border-radius: 50%;
