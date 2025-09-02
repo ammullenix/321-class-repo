@@ -10,7 +10,7 @@ img{
 #flex-container {
     display: flex;
     align-items: baseline;
-    gap: 235px;
+    gap: 240px;
 }
 
 .bg-red{
