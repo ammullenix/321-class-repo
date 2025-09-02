@@ -1,0 +1,21 @@
+img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#big{
+    font-size: large;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #dc143c;
+    color: white;
+    font-size: 10px;
+  }
+
+#font{
+    font-family: 'Times New Roman', Times, serif;
+}
