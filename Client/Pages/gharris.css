@@ -1,0 +1,33 @@
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.content-box{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;  
+}
+
+h3{
+    color: #212529;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+.campusinvolvement .btn{
+    margin: 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 30 px;
+}
+
+
+.content-box{
+    font-family:'Times New Roman';
+    font-size: 15px;
+    color:black;
+
+}
