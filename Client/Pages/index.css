@@ -1,8 +1,18 @@
 
+header{
+    text-align: center;
+    padding: 5px;
+    
+}
 
-  
-  .bg-lilac{
+nav{
+    text-align: center;
+    padding: 10px;
     background-color: #c8a2c8;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 .row{
@@ -10,37 +20,36 @@
     flex-wrap: wrap;
 }
 
-.profile{
-    flex: 70%;
-    padding: 10px;
-}
-
 
 .post-text-box{
+    background-color: #eae7f2;
+    text-align: center;
     text-size-adjust: 100px;
     flex: 30%;
     padding: 20px;
 }
+.profile{
+    flex: 70%;
+    padding: 20px;
 
+    
+}
+.border{
+    border: 5px Solid #ffb6c1;
+}
 
-
-.profile-pic{
-    width: 120px;
+.profile img{
+    width: 200px;
     display: block;
-    margin-left: 5;
-    margin-right: 5;
-
+    margin: auto;
 }
 
-.header{
+.profile h1{
     text-align: center;
-    padding: 5px;
 }
 
-
-.nav{
-    text-align: center;
-    padding: 50px;
+  
+  .bg-lilac{
+    background-color: #c8a2c8;
 }
-
 
