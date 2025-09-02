@@ -1,0 +1,35 @@
+#big{
+    font-size: 40px;
+    text-align: center;
+}
+#headshot{
+    width: 20%;
+    height: auto;
+    border: 5px solid saddlebrown;
+
+}
+.bg-red{
+    background-color: #c41e3a;
+}
+.bg-aboutMe{
+    background-color: #077ea6;
+}
+.bg-offwhite{
+    background-color: beige;
+}
+.h1font{
+    font-family: 'Times New Roman', Times, serif;
+}
+.cover-container {
+  background-color: #333;
+background-image: radial-gradient(circle at center, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+}
+body {
+  background-color: #333;
+  background-image: radial-gradient(circle at center, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+  background-attachment: fixed;
+  background-size: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
