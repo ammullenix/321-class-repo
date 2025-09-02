@@ -1,0 +1,198 @@
+#bannerImage{
+    width: auto;
+    background-image: url(https://media.licdn.com/dms/image/v2/D4E3DAQEHUXW7kcWfuQ/image-scale_191_1128/image-scale_191_1128/0/1722026783492/university_of_alabama_cover?e=2147483647&v=beta&t=wcq0NlEw2QyFkt35ObDP5BBOpvQJP4jaqHOpZjY88mI);
+    height: 175px;
+    background-color: rgb(195, 73, 195);
+    background-position: center;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    border: 5px solid #980b0b;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ImageBorder
+{
+    border-width: 1px;
+    border-color: Black;
+}
+
+#headerSize{
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+
+#bioDescription{
+  padding-left: 10px;
+}
+
+#subHeading{
+  font-weight: bold;
+}
+
+#jobDescription{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#nameTag{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#myLocation{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p.normal {
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #8c8c8c8c;
+}
+
+.wrapper {
+  top: 12%;
+  left: 6%;
+  position: absolute;
+  perspective: 1500px;
+}
+
+.box-area {
+  position: absolute;
+  animation-name: rotate;
+  animation-duration: 5s;
+  transform-style: preserve-3d;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-size: cover;
+  border: 0px solid #0d1117;
+  background-repeat: no-repeat;
+}
+
+.front-box {
+  transform: translateX(-150px) translateY(-150px) translateZ(150px);
+}
+
+.front-middle-box {
+  border: none;
+  transform: translateX(-150px) translateY(-150px) translateZ(0px);
+  background-image: url("https://vectorseek.com/wp-content/uploads/2023/01/Alabama-Crimson-Tide-Logo-Vector.jpg");
+}
+
+.back-middle-box {
+  border: none;
+  transform: translateX(-150px) translateY(-150px) translateZ(0px)
+    rotateY(-180deg);
+  background-image: url("https://vectorseek.com/wp-content/uploads/2023/01/Alabama-Crimson-Tide-Logo-Vector.jpg");
+}
+
+.back-box {
+  transform: translateX(-150px) translateY(-150px) translateZ(-150px);
+}
+
+.right-box {
+  transform: translateY(-150px) rotateY(90deg);
+}
+
+.left-box {
+  transform: translateY(-150px) translateX(-300px) rotateY(90deg);
+}
+
+.bottom-box {
+  transform: translateX(-150px) rotateX(90deg);
+  background: #27dac500;
+}
+
+.top-box {
+  background-color: #bb86fc00;
+  transform: translateX(-150px) translateY(-300px) rotateX(90deg);
+}
+
+@media (min-width: 600px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .front-box {
+    transform: translateX(-50px) translateY(-50px) translateZ(50px);
+  }
+
+  .front-middle-box {
+    transform: translateX(-50px) translateY(-50px) translateZ(0px);
+  }
+
+  .back-middle-box {
+    transform: translateX(-50px) translateY(-50px) translateZ(0px)
+      rotateY(-180deg);
+  }
+
+  .back-box {
+    transform: translateX(-50px) translateY(-50px) translateZ(-50px);
+  }
+
+  .right-box {
+    transform: translateY(-50px) rotateY(90deg);
+  }
+
+  .left-box {
+    transform: translateY(-50px) translateX(-100px) rotateY(90deg);
+  }
+
+  .bottom-box {
+    transform: translateX(-50px) rotateX(90deg);
+  }
+
+  .top-box {
+    transform: translateX(-50px) translateY(-100px) rotateX(90deg);
+  }
+}
