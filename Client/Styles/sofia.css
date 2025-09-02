@@ -1,0 +1,49 @@
+.bg-gray{
+    background-color: #383b42;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+}
+
+.about-text{
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+
+img{
+    width: 35%;
+    height: auto;
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+#heading{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+#section{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#list{
+    text-align: left;
+    display: inline-block;
+}
+
+#tableheading{
+    text-align: center;
+}
+
+/* img{
+    width: 30%;
+    height: auto;
+    margin-left: 40px;
+} */
