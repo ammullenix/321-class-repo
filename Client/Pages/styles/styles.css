@@ -1,0 +1,7 @@
+.body{
+    padding-top: 56px;
+}
+.squareimage{
+aspect-ratio: 1/1;
+object-fit: cover;
+}
