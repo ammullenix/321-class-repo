@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson McNeal - Personal Page</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <style>
+        :root {
+            --chocolate-cosmos: #461220;
+            --platinum: #dce0d9;
+            --paynes-gray: #666a86;
+            --crimson: #d7263d;
+            --night: #00100b;
+        }
+        
+        /* Sticky Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            background-color: rgba(70, 18, 32, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(70, 18, 32, 0.3);
+        }
+        
+        /* Hero Section with Gradient Text */
+        .hero-section {
+            background: linear-gradient(135deg, var(--chocolate-cosmos) 0%, var(--night) 100%);
+            color: var(--platinum);
+            padding: 4rem 0;
+            margin-top: 76px; /* Account for fixed navbar */
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--platinum) 0%, var(--crimson) 50%, var(--platinum) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* Section Cards */
+        .section-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(70, 18, 32, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: var(--platinum);
+            margin: 0.5rem;
+            transform: translateY(0);
+            opacity: 0;
+        }
+        
+        .section-card.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 12px 25px rgba(70, 18, 32, 0.25);
+        }
+        
+        /* Skill badges w/ effects */
+        .skill-badge {
+            background-color: var(--crimson);
+            color: var(--platinum);
+            font-size: 0.9rem;
+            margin: 0.25rem;
+            border: none;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0.5rem 0.75rem;
+        }
+        
+        .skill-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+            pointer-events: none;
+        }
+        
+        .skill-badge:hover::before {
+            left: 100%;
+        }
+        
+        .skill-badge:hover {
+            background-color: var(--chocolate-cosmos);
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(215, 38, 61, 0.4);
+        }
+        
+        .skill-badge * {
+            pointer-events: none;
+        }
+        
+        /* Experience Items & Borders*/
+        .experience-item {
+            border-left: 4px solid var(--crimson);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0;
+            height: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--crimson), var(--chocolate-cosmos));
+            transition: height 0.3s ease;
+        }
+        
+        .experience-item:hover::before {
+            height: 100%;
+        }
+        
+        .experience-item:hover {
+            transform: translateX(5px);
+            padding-left: 2rem;
+        }
+        
+        /* Contact Info with Enhanced Styling */
+        .contact-info {
+            background-color: rgba(220, 224, 217, 0.15);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-top: 1rem;
+            border: 1px solid rgba(220, 224, 217, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info:hover {
+            background-color: rgba(220, 224, 217, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(70, 18, 32, 0.15);
+        }
+        
+        /* Typography and Colors */
+        .card-title {
+            color: var(--chocolate-cosmos) !important;
+        }
+        
+        .text-primary {
+            color: var(--crimson) !important;
+        }
+        
+        .text-muted {
+            color: var(--paynes-gray) !important;
+        }
+        
+        .navbar.bg-red {
+            background-color: var(--chocolate-cosmos) !important;
+        }
+        
+        .btn-danger {
+            background-color: var(--crimson);
+            border-color: var(--crimson);
+        }
+        
+        .btn-danger:hover {
+            background-color: var(--chocolate-cosmos);
+            border-color: var(--chocolate-cosmos);
+        }
+        
+        .footer-custom {
+            background-color: var(--night);
+            color: var(--platinum);
+        }
+        
+        .section-header {
+            color: var(--chocolate-cosmos);
+            border-bottom: 2px solid var(--crimson);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .section-header:hover {
+            border-bottom-color: var(--chocolate-cosmos);
+            transform: translateX(5px);
+        }
+        
+        .card-body {
+            padding: 2rem;
+        }
+        
+        /* Fade-in Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+                 /* Headshot Photo Styling */
+         .headshot-container {
+             position: absolute;
+             top: 100px;
+             right: 50px;
+             z-index: 100;
+         }
+         
+         .headshot-photo {
+             width: 200px;
+             height: 200px;
+             border-radius: 50%;
+             object-fit: cover;
+             border: 4px solid var(--platinum);
+             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+         }
+         
+         /* Smooth Scrolling */
+         html {
+             scroll-behavior: smooth;
+         }
+    </style>
+</head>
+<body style="background-color: #f8f9f7;">
+    <!-- Navigation -->
+    <nav class="navbar bg-red">
+        <div class="container">
+            <a class="navbar-brand text-white h2 mb-0 fw-bold" href="../index.html">← Back to MIS 321</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center px-4">
+            <div class="row justify-content-center">
+                                 <div class="col-lg-8">
+                     <!-- Headshot Photo -->
+                     <div class="headshot-container">
+                         <img src="../Images/headshot.jpg" alt="Carson McNeal" class="headshot-photo" id="headshot-photo">
+                     </div>
+                     
+                     <h1 class="display-4 fw-bold mb-3 gradient-text">Carson McNeal</h1>
+                     <p class="lead mb-4">Management Information Systems Student</p>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p class="mb-0"><strong>Location:</strong> Tuscaloosa, Alabama</p>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <p class="mb-0"><strong>University:</strong> The University of Alabama</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="bi bi-envelope-fill"></i>
+                                <p class="mb-1"><strong>Email:</strong></p>
+                                <p class="mb-0">cjmcneal@crimsonua.edu</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="bi bi-telephone-fill"></i>
+                                <p class="mb-1"><strong>Phone:</strong></p>
+                                <p class="mb-0">(205) 534-9774</p>
+                            </div>
+                            <div class="col-md-4">
+                                <i class="bi bi-linkedin"></i>
+                                <p class="mb-1"><strong>LinkedIn:</strong></p>
+                                <a href="https://linkedin.com/in/carson-mcneal-006799300" target="_blank" class="text-white">linkedin.com/in/carson-mcneal-006799300</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5 px-4">
+        <div class="row">
+            <!-- Education Section -->
+            <div class="col-lg-6 mb-4">
+                <div class="card section-card h-100 fade-in">
+                    <div class="card-body">
+                        <h2 class="section-header">
+                            <i class="bi bi-mortarboard-fill me-2"></i>Education
+                        </h2>
+                        <div class="mb-3">
+                            <h5 class="fw-bold">Bachelor of Science, April 2026</h5>
+                            <p class="text-muted mb-1">The University of Alabama, Culverhouse College of Business</p>
+                            <p class="text-muted mb-2">Management Information Systems</p>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Associate's Degree, November 2023</h5>
+                            <p class="text-muted mb-0">Shelton State Community College, Tuscaloosa, AL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="col-lg-6 mb-4">
+                <div class="card section-card h-100 fade-in">
+                    <div class="card-body">
+                        <h2 class="section-header">
+                            <i class="bi bi-tools me-2"></i>Skills & Expertise
+                        </h2>
+                        <div class="mb-3">
+                            <h6 class="fw-bold">Technical Skills:</h6>
+                            <span class="badge skill-badge">Matlab</span>
+                            <span class="badge skill-badge">Microsoft Office Suite</span>
+                            <span class="badge skill-badge">Computer Aided Design</span>
+                            <span class="badge skill-badge">Apple Hardware Repair</span>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="fw-bold">Communication Skills:</h6>
+                            <span class="badge skill-badge">Professional Communication</span>
+                            <span class="badge skill-badge">Customer Service</span>
+                            <span class="badge skill-badge">Technical Explanation</span>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="fw-bold">Leadership & Problem Solving:</h6>
+                            <span class="badge skill-badge">Team Leadership</span>
+                            <span class="badge skill-badge">Mentoring</span>
+                            <span class="badge skill-badge">Process Improvement</span>
+                            <span class="badge skill-badge">Analytical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card section-card fade-in">
+                    <div class="card-body">
+                        <h2 class="section-header">
+                            <i class="bi bi-briefcase-fill me-2"></i>Work Experience
+                        </h2>
+                        
+                        <div class="experience-item">
+                            <h5 class="fw-bold text-primary">Sales/Technician</h5>
+                            <h6 class="text-muted">The Core / Tuscom, Tuscaloosa, AL | July 2021 - January 2024</h6>
+                            <ul class="mb-0">
+                                <li>Excelled in Sales and Technical Advising/Repair, serving approximately 30 customers daily</li>
+                                <li>Performed hardware repairs and replacements for an average of 10 devices per week</li>
+                                <li>Developed communication skills by providing clear, concise technical explanations</li>
+                                <li>Maintained customer satisfaction rating of over 95%</li>
+                                <li>Acquired deep understanding of Apple's software and hardware ecosystems</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <h5 class="fw-bold text-primary">Research Assistant</h5>
+                            <h6 class="text-muted">The University of Alabama | June 2018 - August 2018</h6>
+                            <ul class="mb-0">
+                                <li>Studied theoretical concepts and assisted with practical experiments in the Metallurgical Engineering Department</li>
+                                <li>Determined how to grow Copper nanotwinned films by performing Transmission Electron Microscopy</li>
+                                <li>Developed strong foundation in research methodology, data analysis, and metallurgical principles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Achievements Section -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card section-card fade-in">
+                    <div class="card-body">
+                        <h2 class="section-header">
+                            <i class="bi bi-trophy-fill me-2"></i>Key Achievements & Capabilities
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="fw-bold">Leadership & Mentoring:</h6>
+                                <ul class="list-unstyled text-muted">
+                                    <li>Capable of taking charge and leading others</li>
+                                    <li>Proven track record in mentoring and training team members</li>
+                                    <li>Enhanced team skills and performance</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold">Innovation & Efficiency:</h6>
+                                <ul class="list-unstyled text-muted">
+                                    <li>Proactive in identifying process improvement opportunities</li>
+                                    <li>Implementing innovative technology solutions</li>
+                                    <li>Driving business efficiency through technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-custom text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Carson McNeal. All rights reserved.</p>
+        </div>
+    </footer>
+
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+         <script>
+         // Navbar scroll effect
+         window.addEventListener('scroll', function() {
+             const navbar = document.querySelector('.navbar');
+             if (window.scrollY > 50) {
+                 navbar.classList.add('scrolled');
+             } else {
+                 navbar.classList.remove('scrolled');
+             }
+         });
+ 
+         // Fade in on scroll
+         const observerOptions = {
+             threshold: 0.1,
+             rootMargin: '0px 0px -50px 0px'
+         };
+ 
+         const observer = new IntersectionObserver(function(entries) {
+             entries.forEach(entry => {
+                 if (entry.isIntersecting) {
+                     entry.target.classList.add('visible');
+                 }
+             });
+         }, observerOptions);
+ 
+         // Setup animations
+         document.addEventListener('DOMContentLoaded', function() {
+             const fadeElements = document.querySelectorAll('.fade-in');
+             fadeElements.forEach(el => observer.observe(el));
+             
+
+         });
+     </script>
+</body>
+</html>
