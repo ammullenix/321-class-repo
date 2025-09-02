@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #faf9fa;
+    color: #212529;
+    scroll-behavior: smooth;
+    padding-top: 70px;
+}
+h1 {
+    margin-top: 1px;
+    margin-bottom: 0.5px;
+    font-weight: bold;
+    text-align: center;
+}
+h4 {
+    font-weight: normal;
+    line-height: 1.2;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.section-title {
+    color:#900603;
+    margin-bottom: 1px;
+    font-weight: 600;
+    border-bottom: 2px solid #900603;
+    display: inline-block;
+    padding-bottom: 0.25px;
+}
+.headshot-img {
+    max-width: 250px;
+    border-radius: 1px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 1px;
+}
+.work-experience {
+    color:#900603;
+    font-weight: 500;
+}
+.work-experience:hover { 
+    text-decoration: underline;
+    cursor: pointer;
+}
+.list-group {
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+}
+.list-group-last {
+    border-bottom: none;
+}
+footer {
+    margin-top: 2px;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+}
