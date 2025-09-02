@@ -12,3 +12,12 @@
     margin: auto;
     width: 50%;
 }
+#SubSubTitles{
+    font-size: 30px;
+    text-align: center;
+}
+.center{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
