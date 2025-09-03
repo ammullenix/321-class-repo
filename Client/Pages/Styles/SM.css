@@ -1,0 +1,19 @@
+#headshot {
+    width: 150px;
+    border-radius: 55px;
+    border: 4px solid #B61D18;
+    margin-bottom: 25px;
+}
+
+.profile-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #9E1B32;
+    padding: 20px;
+    max-width: 900px; /* allow wider layout on large screens */
+    margin: 0 auto; /* keep centered but not too narrow */
+    width: 95%;
+    
+
+
+}
